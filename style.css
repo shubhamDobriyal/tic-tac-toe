@@ -1,0 +1,68 @@
+* {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body {
+  background: url("bg.jpg");
+  background-size: cover;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(25, 109, 25);
+}
+
+h2 {
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#start {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(202, 41, 35);
+  color: white;
+  font-size: 1rem;
+  border-bottom: 2px solid black;
+  margin: 20px;
+}
+
+.board .row {
+  display: flex;
+}
+
+.board .row .place {
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 1px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: monospace;
+  color: white;
+  cursor: not-allowed;
+}
+
+.board .row .place:empty {
+  cursor: crosshair;
+}
